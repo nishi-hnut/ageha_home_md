@@ -40,7 +40,15 @@ export default function Home(): JSX.Element {
       <header className="w-full sticky top-0 z-50 bg-white border-b">
         <div className="text-center  justify-between py-7 flex container">
           <div className="flex">
-            <div className="text-4xl font-bold">AGEHA</div>
+            <Scroll
+              to="top"
+              smooth={true}
+              duration={600}
+              offset={-135}
+              className="text-4xl font-bold cursor-pointer"
+            >
+              AGEHA
+            </Scroll>
             <div className="text-start">
               <div className="text-xs pt-1">アゲハライブ</div>
               <div className="text-xs">業界人気 No.1 ✨</div>
@@ -64,7 +72,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-16 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
             >
               お仕事
             </Scroll>
@@ -73,7 +81,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-16 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
             >
               報酬
             </Scroll>
@@ -82,7 +90,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-16 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
             >
               メリット
             </Scroll>
@@ -91,16 +99,25 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-16 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
             >
               Q&A
+            </Scroll>
+            <Scroll
+              to="good"
+              smooth={true}
+              duration={600}
+              offset={-55}
+              className="font-bold text-pink-400 cursor-pointer li-css"
+            >
+              おすすめ
             </Scroll>
           </ul>
         </div>
       </header>
 
       {/* 画像 */}
-      <div className="">
+      <div id="top" className="">
         <div className="relative w-full">
           <img
             src="https://as2.ftcdn.net/v2/jpg/06/66/39/51/1000_F_666395131_xcH5fxuuGTrC5kQxuYDgbFBrQDeNBCWJ.jpg"
@@ -119,7 +136,7 @@ export default function Home(): JSX.Element {
       {/* お仕事内容 */}
       <div id="task" className="mb-8 animation">
         <div className="text-center">
-          <div className="text-black text-2xl font-bold pt-20 px-4 border-b-red-200">
+          <div className="text-black text-2xl font-bold pt-20 px-4">
             チャットレディーのお仕事内容
           </div>
         </div>
@@ -149,7 +166,7 @@ export default function Home(): JSX.Element {
       {/* 内容 */}
       <div id="value" className="animation">
         <div className="text-center">
-          <div className="text-black text-2xl font-bold pt-20 px-4 border-b-red-200">
+          <div className="text-black text-2xl font-bold pt-20 px-4">
             報酬内容
           </div>
         </div>
@@ -304,7 +321,7 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* おすすめの人 */}
-      <div className="bg-50 animation">
+      <div id="good" className="bg-50 animation">
         <div className="text-center pt-20">
           <div className="text-black text-2xl font-bold pt-2 px-4 border-b-red-200">
             どんな人におすすめ？
