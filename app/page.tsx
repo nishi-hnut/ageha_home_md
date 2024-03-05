@@ -1,9 +1,40 @@
 "use client"
 
 import Image from "next/image"
+import { useEffect } from "react"
 import { Link as Scroll } from "react-scroll"
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 export default function Home(): JSX.Element {
+  useEffect(() => {
+    if (process.browser) {
+      gsap.registerPlugin(ScrollTrigger)
+      setAnimation()
+    }
+  }, [])
+
+  const setAnimation = () => {
+    gsap.utils.toArray(".animation").forEach((target) => {
+      gsap.fromTo(
+        target,
+        { opacity: 0, y: 10 }, // fromの設定
+        {
+          opacity: 1, // toの設定
+          y: 0,
+          duration: 2,
+          scrollTrigger: {
+            trigger: target,
+            start: "top center", // 要素のトップが、画面の中央まできたら開始
+            end: "bottom center", // 要素のボトムが、画面の中央まできたら終了
+            onEnter: () => console.log("scroll In"),
+            onEnterBack: () => console.log("scroll Back"),
+          },
+        }
+      )
+    })
+  }
+
   return (
     <main className="max-w-md mx-auto">
       <header className="w-full sticky top-0 z-50 bg-white border-b">
@@ -86,7 +117,7 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* お仕事内容 */}
-      <div id="task" className="mb-8">
+      <div id="task" className="mb-8 animation">
         <div className="text-center">
           <div className="text-black text-2xl font-bold pt-20 px-4 border-b-red-200">
             チャットレディーのお仕事内容
@@ -116,7 +147,7 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* 内容 */}
-      <div id="value">
+      <div id="value" className="animation">
         <div className="text-center">
           <div className="text-black text-2xl font-bold pt-20 px-4 border-b-red-200">
             報酬内容
@@ -143,8 +174,8 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* チャットレディーのメリット */}
-      <div id="merit">
-        <div className="text-center">
+      <div id="merit" className="animation">
+        <div id="" className="text-center">
           <div className="text-black text-2xl font-bold pt-20 px-4">
             チャットレディーのメリット
           </div>
@@ -225,7 +256,7 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* Q&A */}
-      <div id="QA">
+      <div id="QA" className="animation">
         <div className="text-center pt-20">
           <div className="text-black text-2xl font-bold pt-2 px-4">Q&A</div>
         </div>
@@ -273,7 +304,7 @@ export default function Home(): JSX.Element {
       </div>
 
       {/* おすすめの人 */}
-      <div className="bg-50">
+      <div className="bg-50 animation">
         <div className="text-center pt-20">
           <div className="text-black text-2xl font-bold pt-2 px-4 border-b-red-200">
             どんな人におすすめ？
