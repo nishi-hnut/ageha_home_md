@@ -18,15 +18,15 @@ export default function Home(): JSX.Element {
     gsap.utils.toArray(".animation").forEach((target) => {
       gsap.fromTo(
         target,
-        { opacity: 0, y: 10 }, // fromの設定
+        { opacity: 0, y: 10 },
         {
-          opacity: 1, // toの設定
+          opacity: 1,
           y: 0,
           duration: 2,
           scrollTrigger: {
             trigger: target,
-            start: "top center", // 要素のトップが、画面の中央まできたら開始
-            end: "bottom center", // 要素のボトムが、画面の中央まできたら終了
+            start: "top center",
+            end: "bottom center",
             onEnter: () => console.log("scroll In"),
             onEnterBack: () => console.log("scroll Back"),
           },
