@@ -5,6 +5,7 @@ import { useEffect } from "react"
 import { Link as Scroll } from "react-scroll"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Tweet from "./components/tweet"
 
 export default function Home() {
   useEffect(() => {
@@ -408,6 +409,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div>XのAPI制限によりログイン状態でないと閲覧できません</div>
+      <Tweet />
 
       {/* ご応募はこちら */}
       <div className="">
