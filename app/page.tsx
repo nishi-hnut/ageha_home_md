@@ -72,7 +72,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               お仕事
             </Scroll>
@@ -81,7 +81,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               報酬
             </Scroll>
@@ -90,7 +90,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               メリット
             </Scroll>
@@ -99,7 +99,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="mr-12 font-bold text-pink-400 cursor-pointer li-css"
+              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               Q&A
             </Scroll>
@@ -108,7 +108,7 @@ export default function Home(): JSX.Element {
               smooth={true}
               duration={600}
               offset={-55}
-              className="font-bold text-pink-400 cursor-pointer li-css"
+              className="font-bold text-gray-500 cursor-pointer li-css"
             >
               おすすめ
             </Scroll>
@@ -136,13 +136,14 @@ export default function Home(): JSX.Element {
       {/* お仕事内容 */}
       <div id="task" className="mb-8 animation">
         <div className="text-center">
-          <div className="text-black text-2xl font-bold pt-20 px-4">
+          <div className="text-black text-2xl font-bold mt-20 px-4 bg-pink-50 border-t-2 border-b-2">
             チャットレディーのお仕事内容
           </div>
         </div>
-        <div className="text-black text-xl font-bold mt-16">
+        <div className="text-black text-xl font-bold mt-16 bg-pink-50 border-l-4 border-pink-400 px-1 py-1">
           ライブチャットとは
         </div>
+
         <div>
           <p className="mt-5">
             ライブチャットで働く女性のことをチャットレディと呼びます。
@@ -166,11 +167,13 @@ export default function Home(): JSX.Element {
       {/* 内容 */}
       <div id="value" className="animation">
         <div className="text-center">
-          <div className="text-black text-2xl font-bold pt-20 px-4">
+          <div className="text-black text-2xl font-bold mt-20 px-4 border-t-2 border-b-2 bg-pink-50">
             報酬内容
           </div>
         </div>
-        <div className="text-black text-xl font-bold mt-16">報酬について</div>
+        <div className="text-black text-xl font-bold mt-16 bg-pink-50 border-l-4 border-pink-400 px-1 py-1">
+          報酬について
+        </div>
         <div className="w-full shadow-xl mt-5">
           <img
             src="https://cdn.pixabay.com/photo/2017/10/25/19/45/piggy-bank-2889042_1280.jpg"
@@ -193,14 +196,16 @@ export default function Home(): JSX.Element {
       {/* チャットレディーのメリット */}
       <div id="merit" className="animation">
         <div id="" className="text-center">
-          <div className="text-black text-2xl font-bold pt-20 px-4">
+          <div className="text-black text-2xl font-bold mt-20 px-4 bg-pink-50 border-t border-b">
             チャットレディーのメリット
           </div>
         </div>
         {/* 画像つき説明 */}
         <div className="w-full mt-16">
           {/* 1 */}
-          <div className="text-black text-xl font-bold mt-16">在宅で稼げる</div>
+          <div className="text-black text-xl font-bold mt-16 bg-pink-50 border-l-4 border-pink-400 px-1 py-1">
+            在宅で稼げる
+          </div>
           <div className="mt-5">
             <img
               src="https://media.istockphoto.com/id/1303965572/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E8%87%AA%E5%AE%85%E3%81%AB%E3%81%84%E3%82%8B%E5%A5%B3%E6%80%A7.jpg?s=612x612&w=0&k=20&c=4NF7-RsvPS2JzLKfimSl_wgkHUEl2TVYVrO8rlO22wY="
@@ -219,7 +224,7 @@ export default function Home(): JSX.Element {
             </p>
           </div>
           {/* 2 */}
-          <div className="text-black text-xl font-bold mt-16">
+          <div className="text-black text-xl font-bold mt-16 bg-pink-50 border-l-4 border-pink-400 px-1 py-1">
             スマホ一台で始められる
           </div>
           <div className="mt-5">
@@ -240,7 +245,7 @@ export default function Home(): JSX.Element {
             </p>
           </div>
           {/* 3 */}
-          <div className="text-black text-xl font-bold mt-16">
+          <div className="text-black text-xl font-bold mt-16 bg-pink-50 border-l-4 border-pink-400 px-1 py-1">
             顔出しなし・ノンアダでもOK
           </div>
           <div className="mt-5">
@@ -275,7 +280,9 @@ export default function Home(): JSX.Element {
       {/* Q&A */}
       <div id="QA" className="animation">
         <div className="text-center pt-20">
-          <div className="text-black text-2xl font-bold pt-2 px-4">Q&A</div>
+          <div className="text-black text-2xl font-bold mt-2 px-4 bg-pink-50 border-t border-b">
+            Q&A
+          </div>
         </div>
         <div className="max-w-5xl mx-auto pt-10">
           <div className="border p-10 bg-white rounded-xl shadow-xl">
@@ -323,10 +330,10 @@ export default function Home(): JSX.Element {
       {/* おすすめの人 */}
       <div id="good" className="bg-50 animation">
         <div className="text-center pt-20">
-          <div className="text-black text-2xl font-bold pt-2 px-4 border-b-red-200">
+          <div className="text-black text-2xl font-bold mt-2 border-t border-b bg-pink-50">
             どんな人におすすめ？
           </div>
-          <div className="mt-16">
+          <div className="mt-16 border-b-2">
             フリーターはもちろん以下の方もおすすめしています！
           </div>
         </div>
@@ -336,7 +343,7 @@ export default function Home(): JSX.Element {
               <img
                 src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
                 alt=""
-                className="rounded-full w-40 h-40 object-cover"
+                className="w-full h-40 object-cover left-12"
               />
             </div>
             <div className="hukidasi bg-pink-50 shadow-xl">
@@ -361,7 +368,7 @@ export default function Home(): JSX.Element {
               <img
                 src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
                 alt=""
-                className="rounded-full w-40 h-40 object-cover"
+                className="w-full h-40 object-cover"
               />
             </div>
             <div className="hukidasi bg-pink-50 shadow-xl">
@@ -384,7 +391,7 @@ export default function Home(): JSX.Element {
               <img
                 src="https://media.istockphoto.com/id/680368662/ja/%E3%82%B9%E3%83%88%E3%83%83%E3%82%AF%E3%83%95%E3%82%A9%E3%83%88/%E5%A5%B3%E6%80%A7%E3%81%AE%E8%A1%97.jpg?s=612x612&w=0&k=20&c=7HerT3uT8XWZyUElJmmD6oTpPzGZH7PdjxPut9L3oTo="
                 alt=""
-                className="rounded-full w-40 h-40 object-cover"
+                className="w-full h-40 object-cover"
               />
             </div>
             <div className="hukidasi bg-pink-50 shadow-xl">

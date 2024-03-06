@@ -15,7 +15,8 @@
   content: "";
   width: 100%;
   height: 3px;
-  background: pink;
+  background: gray;
+  opacity: 0.8;
   transform: scale(0, 1);
   transform-origin: right top;
   transition: transform 0.3s;
