@@ -417,7 +417,7 @@ export default function Home() {
       <div className="">
         <div className="text-center pt-20">
           <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
-            ご応募はこちら！
+            ご登録はこちら！
           </div>
           <div className="mt-16 pb-8 ">
             <button className="shadow-lg bg-cyan-500 shadow-teal-500/50 text-white rounded px-20 py-3 cursor-pointer">
