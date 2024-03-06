@@ -6,7 +6,7 @@ import { Link as Scroll } from "react-scroll"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-export default function Home(): JSX.Element {
+export default function Home() {
   useEffect(() => {
     if (process.browser) {
       gsap.registerPlugin(ScrollTrigger)
@@ -71,7 +71,7 @@ export default function Home(): JSX.Element {
               to="task"
               smooth={true}
               duration={600}
-              offset={-55}
+              offset={-75}
               className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               お仕事
@@ -80,7 +80,7 @@ export default function Home(): JSX.Element {
               to="value"
               smooth={true}
               duration={600}
-              offset={-55}
+              offset={-75}
               className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               報酬
@@ -89,7 +89,7 @@ export default function Home(): JSX.Element {
               to="merit"
               smooth={true}
               duration={600}
-              offset={-55}
+              offset={-75}
               className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               メリット
@@ -98,7 +98,7 @@ export default function Home(): JSX.Element {
               to="QA"
               smooth={true}
               duration={600}
-              offset={-55}
+              offset={-75}
               className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
             >
               Q&A
@@ -107,7 +107,7 @@ export default function Home(): JSX.Element {
               to="good"
               smooth={true}
               duration={600}
-              offset={-55}
+              offset={-75}
               className="font-bold text-gray-500 cursor-pointer li-css"
             >
               おすすめ
@@ -135,9 +135,9 @@ export default function Home(): JSX.Element {
 
       {/* お仕事内容 */}
       <div id="task" className="mb-8 animation">
-        <div className="text-center">
-          <div className="text-black text-2xl font-bold mt-20 px-4 bg-pink-50 border-t-2 border-b-2">
-            チャットレディーのお仕事内容
+        <div className="text-center mt-20">
+          <div className="text-black text-2xl font-bold bg-pink-50 obi">
+            チャットレディのお仕事内容
           </div>
         </div>
         <div className="text-black text-xl font-bold mt-16 bg-pink-50 border-l-4 border-pink-400 px-1 py-1">
@@ -167,7 +167,7 @@ export default function Home(): JSX.Element {
       {/* 内容 */}
       <div id="value" className="animation">
         <div className="text-center">
-          <div className="text-black text-2xl font-bold mt-20 px-4 border-t-2 border-b-2 bg-pink-50">
+          <div className="text-black text-2xl font-bold mt-20 px-4 obi">
             報酬内容
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function Home(): JSX.Element {
         </div>
         <div className="">
           <p className="mt-5">
-            チャットレディーになる上で気になることの一つは報酬です。
+            チャットレディになる上で気になることの一つは報酬です。
           </p>
           <p className="mt-2">
             報酬はユーザーが消費した金額の◯％～となります。
@@ -193,11 +193,11 @@ export default function Home(): JSX.Element {
         </div>
       </div>
 
-      {/* チャットレディーのメリット */}
+      {/* チャットレディのメリット */}
       <div id="merit" className="animation">
         <div id="" className="text-center">
-          <div className="text-black text-2xl font-bold mt-20 px-4 bg-pink-50 border-t border-b">
-            チャットレディーのメリット
+          <div className="text-black text-2xl font-bold mt-20 obi">
+            チャットレディのメリット
           </div>
         </div>
         {/* 画像つき説明 */}
@@ -280,9 +280,7 @@ export default function Home(): JSX.Element {
       {/* Q&A */}
       <div id="QA" className="animation">
         <div className="text-center pt-20">
-          <div className="text-black text-2xl font-bold mt-2 px-4 bg-pink-50 border-t border-b">
-            Q&A
-          </div>
+          <div className="text-black text-2xl font-bold mt-2 obi">Q&A</div>
         </div>
         <div className="max-w-5xl mx-auto pt-10">
           <div className="border p-10 bg-white rounded-xl shadow-xl">
@@ -316,12 +314,12 @@ export default function Home(): JSX.Element {
           <div className="mt-16 border p-10 bg-white rounded-xl shadow-2xl mb-8">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
-              チャットレディ未経験でも稼げますか？
+              未経験でも稼げますか？
             </div>
 
             <div className="mt-5 text-opacity-5">
               <span className="text-blue-300 text-2xl mr-5">A</span>
-              チャットレディにご応募される方の多くが未経験者からのスタートです。実は未経験の方こそライブチャットでの人気が高く、高収入を得るにはもってこいの状態だったりします。詳しいお仕事の説明やお稼ぎアップのためのノウハウをご活用頂くことで、どなたも簡単に高収入をお稼ぎになられています！！！
+              ご応募される方の多くが未経験者からのスタートです。実は未経験の方こそライブチャットでの人気が高く、高収入を得るにはもってこいの状態だったりします。詳しいお仕事の説明やお稼ぎアップのためのノウハウをご活用頂くことで、どなたも簡単に高収入をお稼ぎになられています！！！
             </div>
           </div>
         </div>
@@ -330,7 +328,7 @@ export default function Home(): JSX.Element {
       {/* おすすめの人 */}
       <div id="good" className="bg-50 animation">
         <div className="text-center pt-20">
-          <div className="text-black text-2xl font-bold mt-2 border-t border-b bg-pink-50">
+          <div className="text-black text-2xl font-bold mt-2 obi">
             どんな人におすすめ？
           </div>
           <div className="mt-16 border-b-2">
@@ -428,11 +426,11 @@ export default function Home(): JSX.Element {
       {/* footer */}
       <footer className="text-xs">
         <div className="text-center mt-16">
-          <div>サービス概要及び料金表</div>
+          <div className="cursor-pointer">サービス概要及び料金表</div>
           <div className="flex mt-4 justify-center">
-            <div className="mx-2">利用規約</div>
-            <div className="mx-2">特定商取引に基づく表示</div>
-            <div className="mx-2">プライバシーポリシー</div>
+            <div className="mx-2 cursor-pointer">利用規約</div>
+            <div className="mx-2 cursor-pointer">特定商取引に基づく表示</div>
+            <div className="mx-2 ">プライバシーポリシー</div>
           </div>
           <div className="my-4">© AGEHAライブチャット All rights reserved.</div>
         </div>
