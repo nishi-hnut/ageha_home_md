@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <main className="max-w-md mx-auto">
       <header className="w-full sticky top-0 z-50 bg-white border-b">
-        <div className="text-center  justify-between py-7 flex container">
+        <div className="text-center justify-between pt-5 pb-3 flex container">
           <div className="flex">
             <Scroll
               to="top"
@@ -58,10 +58,10 @@ export default function Home() {
           {/* ここにお仕事ログインページLinkを追加 */}
           {/* 登録ボタンを追加 */}
           <div className="">
-            <button className="border px-4 py-3 text-white bg-blue-400 rounded-3xl mr-10 hover:bg-blue-500">
+            <button className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">
               登録
             </button>
-            <button className="border px-4 py-3 text-white bg-pink-400 rounded-3xl hover:bg-pink-500">
+            <button className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-3xl text-sm px-4 py-2.5 text-center me-2 mb-2 cursor-pointer">
               ログイン
             </button>
           </div>
@@ -72,8 +72,8 @@ export default function Home() {
               to="task"
               smooth={true}
               duration={600}
-              offset={-75}
-              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
+              offset={-130}
+              className="mr-10 font-bold text-gray-500 cursor-pointer li-css"
             >
               お仕事
             </Scroll>
@@ -81,8 +81,8 @@ export default function Home() {
               to="value"
               smooth={true}
               duration={600}
-              offset={-75}
-              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
+              offset={-130}
+              className="mr-10 font-bold text-gray-500 cursor-pointer li-css"
             >
               報酬
             </Scroll>
@@ -90,8 +90,8 @@ export default function Home() {
               to="merit"
               smooth={true}
               duration={600}
-              offset={-75}
-              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
+              offset={-130}
+              className="mr-10 font-bold text-gray-500 cursor-pointer li-css"
             >
               メリット
             </Scroll>
@@ -99,8 +99,8 @@ export default function Home() {
               to="QA"
               smooth={true}
               duration={600}
-              offset={-75}
-              className="mr-12 font-bold text-gray-500 cursor-pointer li-css"
+              offset={-55}
+              className="mr-10 font-bold text-gray-500 cursor-pointer li-css"
             >
               Q&A
             </Scroll>
@@ -145,7 +145,7 @@ export default function Home() {
           ライブチャットとは
         </div>
 
-        <div>
+        <div className="pl-1">
           <p className="mt-5">
             ライブチャットで働く女性のことをチャットレディと呼びます。
           </p>
@@ -181,7 +181,7 @@ export default function Home() {
             alt=""
           />
         </div>
-        <div className="">
+        <div className="pl-1">
           <p className="mt-5">
             チャットレディになる上で気になることの一つは報酬です。
           </p>
@@ -213,7 +213,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="">
+          <div className="pl-1">
             <p className="mt-5">
               チャットレディは、隙間時間や在宅でも稼げるのが魅力です。
             </p>
@@ -234,7 +234,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="">
+          <div className="pl-1">
             <p className="mt-5">
               チャットレディは、スマホやパソコンで手軽に始められる仕事です。
             </p>
@@ -255,7 +255,7 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="">
+          <div className="pl-1">
             <div className="mt-5">
               <p>アダルトなイメージを強く持つ人こそ、チャットレディへの</p>
               <p>
@@ -283,7 +283,7 @@ export default function Home() {
         <div className="text-center pt-20">
           <div className="text-black text-2xl font-bold mt-2 obi">Q&A</div>
         </div>
-        <div className="max-w-5xl mx-auto pt-10">
+        <div className="pl-4 pt-10">
           <div className="border p-10 bg-white rounded-xl shadow-xl">
             <div className="text-xl border-b">
               <span className="text-pink-400 text-2xl mr-5">Q</span>
@@ -420,7 +420,7 @@ export default function Home() {
             ご応募はこちら！
           </div>
           <div className="mt-16 pb-8 ">
-            <button className="border w-60 h-14 text-2xl bg-blue-300 text-white rounded-full hover:bg-blue-500">
+            <button className="shadow-lg bg-cyan-500 shadow-teal-500/50 text-white rounded px-20 py-3 cursor-pointer">
               登録
             </button>
           </div>
@@ -428,15 +428,46 @@ export default function Home() {
       </div>
 
       {/* footer */}
-      <footer className="text-xs">
-        <div className="text-center mt-16">
-          <div className="cursor-pointer">サービス概要及び料金表</div>
-          <div className="flex mt-4 justify-center">
-            <div className="mx-2 cursor-pointer">利用規約</div>
-            <div className="mx-2 cursor-pointer">特定商取引に基づく表示</div>
-            <div className="mx-2 ">プライバシーポリシー</div>
+      <footer className="bg-gray-50 rounded-xl">
+        <div className="">
+          <div className="flex text-center pt-2">
+            <a href="https://twitter.com/ageha_support?ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3Aageha_support%7Ctwcon%5Es1">
+              <Image
+                src="/twitter_x_new_logo_x_rounded_icon_256078.png"
+                alt="image"
+                width={60}
+                height={60}
+                objectFit="contain"
+                className="object-cover ml-2 mr-4"
+              />
+            </a>
+
+            <a href="https://note.com/ageha_support/n/n78bc021cf63f">
+              <Image
+                src="/icon.png"
+                alt="image2"
+                width={40}
+                height={40}
+                objectFit="contain"
+                className="object-cover"
+              />
+            </a>
+
+            <div className="mt-4 ml-4 text-xs">公式アカウント一覧</div>
           </div>
-          <div className="my-4">© AGEHAライブチャット All rights reserved.</div>
+          <div className="cursor-pointer text-xs mt-4 ml-4">
+            サービス概要及び料金表
+          </div>
+          <div className="flex ml-4 mt-4">
+            <div className="mr-3 cursor-pointer text-xs">利用規約</div>
+            <div className="mr-2 cursor-pointer text-xs">
+              特定商取引に基づく表示
+            </div>
+            <div className="cursor-pointer text-xs">プライバシーポリシー</div>
+          </div>
+          <div className="text-xs ml-4 mt-4">
+            © AGEHAライブチャット All rights reserved.
+          </div>
         </div>
       </footer>
     </main>
