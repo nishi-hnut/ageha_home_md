@@ -120,9 +120,11 @@ export default function Home() {
       {/* 画像 */}
       <div id="top" className="">
         <div className="relative w-full">
-          <img
-            src="https://as2.ftcdn.net/v2/jpg/06/66/39/51/1000_F_666395131_xcH5fxuuGTrC5kQxuYDgbFBrQDeNBCWJ.jpg"
-            alt=""
+          <Image
+            src="/AdobeStock_666395131.jpeg"
+            width={500}
+            height={500}
+            alt="1"
           />
           <div className="absolute top-1/4 left-2/4">
             <div className="text-2xl font-bold ">隙間じかんに</div>
@@ -413,7 +415,7 @@ export default function Home() {
       <div>XのAPI制限によりログイン状態でないと閲覧できません</div>
       <Tweet />
 
-      {/* ご応募はこちら */}
+      {/* ご登録はこちら */}
       <div className="">
         <div className="text-center pt-20">
           <div className="text-black text-4xl font-bold pt-2 px-4 border-b-red-200">
