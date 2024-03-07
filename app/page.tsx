@@ -58,10 +58,10 @@ export default function Home() {
           {/* ここにお仕事ログインページLinkを追加 */}
           {/* 登録ボタンを追加 */}
           <div className="">
-            <button className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">
+            <button className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 cursor-pointer">
               登録
             </button>
-            <button className="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-3xl text-sm px-4 py-2.5 text-center me-2 mb-2 cursor-pointer">
+            <button className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br font-medium rounded-3xl text-sm px-4 py-2.5 text-center me-2 mb-2 cursor-pointer">
               ログイン
             </button>
           </div>
@@ -126,12 +126,21 @@ export default function Home() {
             height={500}
             alt="1"
           />
-          <div className="absolute top-1/4 left-2/4">
-            <div className="text-2xl font-bold ">隙間じかんに</div>
-            <div className="text-2xl font-bold mt-10">仕事する！</div>
-            <div className="text-2xl font-bold mt-10">
+          <div className="absolute top-1/4 -translate-y-1/4 mt-3 left-2/4">
+            <div className="text-2xl font-bold bg-gray-200 rounded-sm w-36">
+              隙間じかんに
+            </div>
+            <div className="text-2xl font-extrabold mt-8 text-black bg-gray-200 rounded-sm w-32">
+              仕事する！
+            </div>
+            <div className="text-2xl font-bold mt-8 bg-gray-200 w-full shadow-2xl">
               <span className="">時給</span>４５００円以上
             </div>
+          </div>
+          <div className="absolute top-3/4 translate-y-6 left-1/3 ml-10 translate-x-1/2">
+            <button className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br font-medium rounded-3xl text-sm px-10 py-2.5 text-center me-2 mb-2 cursor-pointer">
+              登録する
+            </button>
           </div>
         </div>
       </div>
